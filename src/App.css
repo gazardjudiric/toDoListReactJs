@@ -1,38 +1,73 @@
+body {
+  background-color: #333;
+  color: #fff;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headTitle {
+  background-color: #ca9820;
+  border-radius: 8px;
+  border: 1px solid #999;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.taskBg {
+  background-color: #ca9820;
+  /* background-color: #555; */
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+.taskBg .taskText {
+  flex: 1;
+}
+.taskNumber {
+  color: yellow;
+  /* color: #999; */
+  border-radius: 13px;
+  border: 1px solid #999;
+  width: 26px;
+  height: 26px;
   display: flex;
-  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 8px 0 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.taskBg div {
+  display: flex;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  color: #00ff89;
+  cursor: pointer;
+}
+.taskBg .iconsWrap span:hover {
+  color: yellow;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.iconColor {
+  color: red;
 }
